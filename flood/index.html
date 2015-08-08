@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/flipper.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <div id="map" style="margin: 15px; float:left"></div>
+        <div style="width: 500px; float:left; height: 100%">
+        <h1>Flood game</h1>
+        <h2>Goal is fill  more than 50% of area!</h2>
+        <h3>click on desire color to change own color</h3>
+        <div id="colors" style="margin: 15px;"></div>
+        <br style="clear:bo th" />
+        </div>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                Flipper.init({canvas:'#map', colors:'#colors', M:25, N:25});
+                Flipper.run();
+            });
+        </script>
+    </body>
+</html>

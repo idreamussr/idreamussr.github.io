@@ -1,0 +1,14 @@
+root { 
+    display: block;
+}
+
+#map {
+}
+.cell {
+    float:left;
+    border: 1px solid gray;
+}
+
+#colors div {
+    margin: 5px;
+}
